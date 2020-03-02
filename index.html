@@ -36,7 +36,7 @@
             <div class="col-md-4">
                 <div class="balance status">
                     <h5>Balance</h5>
-                    <h2>$ <span id="current-balance">00</span> </h2>
+                    <h2>$ <span id="current-balance">1240</span> </h2>
                 </div>
             </div>
         </div>
@@ -103,6 +103,7 @@
             const withdrawNumber = getInputNumber("withdraw-amount");
 
             updateSpanText("current-withdraw", withdrawNumber);
+            updateSpanText("current-balance", -1* withdrawNumber);
             document.getElementById("withdraw-amount").value ="";
 
 
